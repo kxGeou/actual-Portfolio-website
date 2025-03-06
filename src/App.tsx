@@ -1,7 +1,12 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainPage from "./pages/MainPage";
+
 export default function App() {
   return (
-    <div>
-      
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage></MainPage>}></Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
