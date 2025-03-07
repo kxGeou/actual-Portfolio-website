@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import {  useState } from "react";
 const projectList = [
     {
-        language : ["Firebase", "Database Fetch", "Design"],
+        language : ["Firebase", "Database", "Design"],
         image : Scriptly,
         alternative : "Scriptly hero section",
         project : "Platforma Edukacyjna",
