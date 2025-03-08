@@ -24,17 +24,21 @@ export default function ExperienceBox({
 
   return (
     <Link to={link}>
-      <div className="flex flex-col justify-start items-start mb-20" onMouseEnter={() => setHover(!hover)} onMouseLeave={() => setHover(!hover)}>
-        <div className="mb-4 flex flex-col gap-2">
-          <p className={`text-not-active font-medium text-[14px] `}>{year}</p>
-            <Title name={job} isHover={hover}></Title>
-          <p className="text-not-active text-wrap">{description}</p>
-        </div>
+      <div className="flex sm:justify-between">
+        <p className={`text-not-active font-medium text-[14px] w-full hidden sm:block mt-1`}>{year}</p>
 
-        <div className="flex gap-4 flex-wrap max-w-full w-full">
-          {languages.map((lang, langIndex) => (
-            <Language name={lang} key={langIndex}></Language>
-          ))}
+        <div className="flex flex-col justify-start items-start mb-20" onMouseEnter={() => setHover(!hover)} onMouseLeave={() => setHover(!hover)}>
+          <div className="mb-4 flex flex-col gap-2">
+            <p className={`text-not-active font-medium text-[14px] sm:hidden`}>{year}</p>
+              <Title name={job} isHover={hover}></Title>
+            <p className="text-not-active text-wrap text-[15px]">{description}</p>
+          </div>
+
+          <div className="flex gap-4 flex-wrap max-w-full w-full">
+            {languages.map((lang, langIndex) => (
+              <Language name={lang} key={langIndex}></Language>
+            ))}
+          </div>
         </div>
       </div>
     </Link>
