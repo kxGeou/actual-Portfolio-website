@@ -23,7 +23,3 @@
     color: var(--color-box);
     background-color: var(--color-text-box);
 }
-
-.show {
-    background-color: red !important;
-}
