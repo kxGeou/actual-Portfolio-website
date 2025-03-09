@@ -9,7 +9,7 @@ export default function About() {
 
 
   return (
-    <section>
+    <section id="oMnie">
         <h2 className="font-semibold text-[20px] lg:hidden">O mnie</h2>
         <div className="flex flex-col gap-5 mt-5 lg:mt-0 text-not-active font-medium">
             {paragraphs.map((text,textIndex) => (

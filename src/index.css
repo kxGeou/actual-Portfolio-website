@@ -3,6 +3,7 @@
 * {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
+    scroll-behavior: smooth;
 }
 
 @theme {

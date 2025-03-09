@@ -42,7 +42,7 @@ export default function Experience() {
   const [hover, isHover] = useState(false);
   const [Hoverindex, setHoverIndex] = useState<any>(null);
   return (
-    <section>
+    <section id="doświadczenie">
       <h2 className="font-semibold text-[20px] mb-8">Doświadczenie</h2>
       <div className="flex flex-col gap-20 mb-16">
         {experienceList.map((exp, expIndex) => (

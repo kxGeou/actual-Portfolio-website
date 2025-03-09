@@ -45,7 +45,7 @@ export default function Projects() {
     const [Hoverindex, setHoverIndex] = useState<any>(null);
     
   return (
-    <section id="projects" >
+    <section id="projekty" >
         <h2 className="font-semibold text-[20px] mb-8">Projekty</h2>
         <div className="flex flex-col gap-20">
             {projectList.map((project, projectIndex) => (

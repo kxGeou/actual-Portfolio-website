@@ -11,9 +11,19 @@ export default function Header() {
   }
 
   const Nav = [
-    "O mnie", 
-    "Doświadczenie", 
-    "Projekty"
+    {
+      name : "O mnie", 
+      link : "#oMnie"
+    },
+    {
+      name : "Doświadczenie", 
+      link : "#doświadczenie"
+    },
+    {
+      name : "Projekty", 
+      link : "#projekty"
+    },
+
   ]
 
   const [hoverIndex, setHoverIndex] = useState<number | null>(null)
@@ -29,7 +39,7 @@ export default function Header() {
         <nav className="hidden lg:flex flex-col gap-5">
             {Nav.map((nav, navIndex) => (
               <span key={navIndex} onMouseEnter={() => setHoverIndex(navIndex)} onMouseLeave={()=> setHoverIndex(null)}>
-                <NavElement hoveredIndex={hoverIndex} name={nav} index={navIndex}></NavElement>
+                <NavElement hoveredIndex={hoverIndex} name={nav.name} link={nav.link} index={navIndex}></NavElement>
               </span>
             ))}
         </nav>
