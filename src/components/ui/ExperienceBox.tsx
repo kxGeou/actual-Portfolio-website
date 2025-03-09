@@ -28,7 +28,7 @@ export default function ExperienceBox({
 
   return (
     <Link to={link}>
-      <div className={`flex sm:justify-between lg:border-[1.5px] lg:border-transparent lg:rounded-xl transition-all py-4 px-3 duration-300 ${hoverIndex !== null && hoverIndex !== itemIndex ? "lg:opacity-40" : "lg:opacity-100"} ${hoverIndex == itemIndex ? "lg:bg-white/2 lg:border-1 lg:border-white/10" : ""}`}>
+      <div className={`flex sm:justify-between lg:border-[1.5px] lg:border-transparent lg:rounded-xl transition-all lg:py-4 lg:px-3 duration-300 ${hoverIndex !== null && hoverIndex !== itemIndex ? "lg:opacity-40" : "lg:opacity-100"} ${hoverIndex == itemIndex ? "lg:bg-white/2 lg:border-1 lg:border-white/10" : ""}`}>
         <p className={`text-not-active font-medium text-[14px] w-full hidden sm:block mt-1`}>{year}</p>
         <div className="flex flex-col justify-start items-start" onMouseEnter={() => setHover(!hover)} onMouseLeave={() => setHover(!hover)}>
           <div className="mb-4 flex flex-col gap-2">

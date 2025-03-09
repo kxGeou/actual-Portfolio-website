@@ -48,8 +48,8 @@ export default function Projects() {
         <h2 className="font-semibold text-[20px] mb-8">Projekty</h2>
         <div className="flex flex-col gap-20">
             {projectList.map((project, projectIndex) => (
-                <div onMouseEnter={() => setHoverIndex(projectIndex)} onMouseLeave={() => setHoverIndex(null)}>
-                    <Project hoverIndex={Hoverindex} itemIndex={projectIndex} key={projectIndex} languages={project.language} image={project.image} project={project.project} link={project.link} description={project.description} alternative={project.alternative}></Project>
+                <div onMouseEnter={() => setHoverIndex(projectIndex)} key={projectIndex} onMouseLeave={() => setHoverIndex(null)}>
+                    <Project hoverIndex={Hoverindex} itemIndex={projectIndex}  languages={project.language} image={project.image} project={project.project} link={project.link} description={project.description} alternative={project.alternative}></Project>
                 </div>
             ))}
         </div>

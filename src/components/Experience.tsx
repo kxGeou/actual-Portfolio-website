@@ -28,8 +28,8 @@ export default function Experience() {
         <h2 className="font-semibold text-[20px] mb-8">Doświadczenie</h2>
         <div className="flex flex-col gap-20 mb-16">
         {experienceList.map((exp, expIndex) => (
-          <div onMouseEnter={() => setHoverIndex(expIndex)} onMouseLeave={() => setHoverIndex(null)}>
-            <ExperienceBox hoverIndex={Hoverindex} itemIndex={expIndex} description={exp.description} key={expIndex} year={exp.year} link={exp.link} job={exp.job} languages={exp.languages}></ExperienceBox>
+          <div onMouseEnter={() => setHoverIndex(expIndex)} onMouseLeave={() => setHoverIndex(null)} key={expIndex}>
+            <ExperienceBox hoverIndex={Hoverindex} itemIndex={expIndex} description={exp.description}  year={exp.year} link={exp.link} job={exp.job} languages={exp.languages}></ExperienceBox>
           </div>
         ))}
         </div>

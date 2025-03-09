@@ -19,7 +19,7 @@ export default function Project({project, description, languages, image, alterna
   
     return (
     <Link to={link}>
-        <div className={`flex sm:justify-between sm:items-start lg:border-[1.5px] lg:border-transparent lg:rounded-xl transition-all py-4 px-3 duration-300 ${hoverIndex !== null && hoverIndex !== itemIndex ? "lg:opacity-40" : "lg:opacity-100"} ${hoverIndex == itemIndex ? "lg:bg-white/2 lg:border-1 lg:border-white/10" : ""}`}>
+        <div className={`flex sm:justify-between sm:items-start lg:border-[1.5px] lg:border-transparent lg:rounded-xl transition-all lg:py-4 lg:px-3 duration-300 ${hoverIndex !== null && hoverIndex !== itemIndex ? "lg:opacity-40" : "lg:opacity-100"} ${hoverIndex == itemIndex ? "lg:bg-white/2 lg:border-1 lg:border-white/10" : ""}`}>
             <div className="hidden sm:block sm:min-w-[25%] max-w-full mr-12">
               <img src={image} alt={alternative} loading="lazy" className={` max-w-[200px] aspect-video object-cover rounded border-2 border-white/10 transition hidden w-full sm:min-w-[120px]  sm:block ${hover ? "border-slate-200/30" : ""}`}/>
             </div>
