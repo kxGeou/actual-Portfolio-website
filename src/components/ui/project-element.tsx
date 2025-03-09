@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Language from "./Language";
-import Title from "./Title";
+import Language from "./language";
+import Title from "./title";
 import { useState } from "react";
 
 type TProject = {
