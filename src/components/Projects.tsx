@@ -41,13 +41,19 @@ const projectList = [
 
 export default function Projects() {
     const [hover, setHover] = useState<boolean>(false)
+    const [Hoverindex, setHoverIndex] = useState<any>(null);
+
   return (
     <section>
         <h2 className="font-semibold text-[20px] mb-8">Projekty</h2>
-        {projectList.map((project, projectIndex) => (
-            <Project key={projectIndex} languages={project.language} image={project.image} project={project.project} link={project.link} description={project.description} alternative={project.alternative}></Project>
-        ))}
-        <p className="font-semibold text-[1.20rem] flex justify-start items-center gap-3 cursor-pointer" onMouseLeave={() => setHover(!hover)} onMouseEnter={() => setHover(!hover)}>
+        <div className="flex flex-col gap-20">
+            {projectList.map((project, projectIndex) => (
+                <div onMouseEnter={() => setHoverIndex(projectIndex)} onMouseLeave={() => setHoverIndex(null)}>
+                    <Project hoverIndex={Hoverindex} itemIndex={projectIndex} key={projectIndex} languages={project.language} image={project.image} project={project.project} link={project.link} description={project.description} alternative={project.alternative}></Project>
+                </div>
+            ))}
+        </div>
+        <p className="font-semibold text-[1.20rem] mt-12 flex justify-start items-center gap-3 cursor-pointer" onMouseLeave={() => setHover(!hover)} onMouseEnter={() => setHover(!hover)}>
             <Link to="" className={`transition-all duration-300 ${hover && "border-b-1 border-text-box"}`}>Zobacz wszystkie projekty
                <i className={`fa-solid fa-arrow-right text-[1rem] ml-2 transition-all duration-200 ${hover && "translate-x-2"}`}></i>
             </Link>

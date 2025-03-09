@@ -10,8 +10,8 @@ export default function About() {
 
   return (
     <section>
-        <h2 className="font-semibold text-[20px] ">O mnie</h2>
-        <div className="space-y-5 mt-5 text-not-active font-medium">
+        <h2 className="font-semibold text-[20px] lg:hidden">O mnie</h2>
+        <div className="flex flex-col gap-5 mt-5 lg:mt-0 text-not-active font-medium">
             {paragraphs.map((text,textIndex) => (
                 <p key={textIndex} className="leading-[1.60]">{text}</p>
             ))}

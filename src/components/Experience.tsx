@@ -5,7 +5,7 @@ const experienceList = [
   {
     description : "Podczas nauki w technikum zdobyłem wszechstronną wiedzę z zakresu programowania. Poznałem algorytmy i struktury danych, a także rozwijałem umiejętności w różnych obszarach – od programowania aplikacji mobilnych po tworzenie interfejsów webowych.",
     year : "2020 - 2025",
-    job : "Technik programista uczeń",
+    job : "Technik programista - uczeń",
     link : "https://www.ckziu.jaworzno.pl/",
     languages : ["C++", "React", "Maui", "C#", "GitHub", "Git", "JavaScript", "HTML", "CSS", "Bootstrap"]
   },
@@ -22,13 +22,17 @@ const experienceList = [
 export default function Experience() {
 
   const [hover, isHover] = useState(false)
-
+  const [Hoverindex, setHoverIndex] = useState<any>(null);
   return (
     <section>
         <h2 className="font-semibold text-[20px] mb-8">Doświadczenie</h2>
+        <div className="flex flex-col gap-20 mb-16">
         {experienceList.map((exp, expIndex) => (
-          <ExperienceBox description={exp.description} key={expIndex} year={exp.year} link={exp.link} job={exp.job} languages={exp.languages}></ExperienceBox>
+          <div onMouseEnter={() => setHoverIndex(expIndex)} onMouseLeave={() => setHoverIndex(null)}>
+            <ExperienceBox hoverIndex={Hoverindex} itemIndex={expIndex} description={exp.description} key={expIndex} year={exp.year} link={exp.link} job={exp.job} languages={exp.languages}></ExperienceBox>
+          </div>
         ))}
+        </div>
         <span className="cursor-pointer" onMouseEnter={() => isHover(!hover)}  onMouseLeave={() => isHover(!hover)}><Title name={"Zobacze całe CV"} isHover={hover}></Title></span>
     </section>
   )
