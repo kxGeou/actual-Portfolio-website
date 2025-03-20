@@ -27,7 +27,7 @@ export default function Project({project, description, languages, image, alterna
                 <Title name={project} isHover={hover}></Title>
                 <p className={`text-not-active text-wrap mt-2 ${languages?.length ? "" : "mb-5"}`}>{description}</p>
                 {languages?.length && (
-                    <div className="flex gap-3 my-6">
+                    <div className="flex flex-wrap gap-3 my-6">
                         {languages?.map((item, itemIndex) => (
                             <Language name={item} key={itemIndex}></Language>
                         ))}

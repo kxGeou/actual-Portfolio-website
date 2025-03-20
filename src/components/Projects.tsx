@@ -3,6 +3,7 @@ import Scriptly from '../assets/images/scriptly.png'
 import Theme from '../assets/images/theme.png'
 import Red from '../assets/images/red.png'
 import Todo from '../assets/images/todo.png'
+import Wordle from '../assets/images/wordle.png';
 import { Link } from "react-router-dom";
 import { useState } from "react";
 const projectList = [
@@ -22,20 +23,28 @@ const projectList = [
         link: "https://minimaldarktheme.netlify.app/"
     },
     {
-        image : Todo,
-        alternative : "Todo List website",
-        project : "CRUD Todo lista",
-        description : "Stworzyłem prostą aplikację typu Todo List z funkcjami CRUD (Create, Read, Update, Delete), która pozwala użytkownikowi na zarządzanie listą zadań. Aplikacja zapisuje dane bezpośrednio na urządzeniu użytkownika, co oznacza, że lista zadań pozostaje dostępna nawet po odświeżeniu strony, dzięki wykorzystaniu localStorage.",
-        language : ["localStorage", "CRUD", "Design"],
-        link: "https://tasktrack-typescript.netlify.app/"
-    },
-    {
         image : Red,
         alternative : "Red motion website",
         project : "Strona dla firmy z drukarkami 3D",
         description : "To był mój pierwszy komercyjny projekt – stworzyłem stronę internetową dla firmy R3d, specjalizującej się w drukarkach 3D. Zajmowałem się zarówno projektowaniem, jak i implementacją całej strony. Zrealizowałem ją w React, dbając o nowoczesny wygląd oraz responsywność, aby strona działała poprawnie na różnych urządzeniach.",
         language : [ "React", "Design"],
         link: "https://r3dmotion.com/"
+    },
+    {
+        image : Wordle,
+        alternative : "Wordle Copy Game",
+        project : "Wordle wersja uproszczona",
+        description : "Stworzyłem kopie popularnej gry słownej WORDLE, Lekko zmieniłem design planszy by była bardziej przyjazna dla oka",
+        language : [ "React", "Design", "JSON", "TypeScript", "Regex"],
+        link: "https://wordleclonetype.netlify.app/"
+    },
+    {
+        image : Todo,
+        alternative : "Todo List website",
+        project : "CRUD Todo lista",
+        description : "Stworzyłem prostą aplikację typu Todo List z funkcjami CRUD (Create, Read, Update, Delete), która pozwala użytkownikowi na zarządzanie listą zadań. Aplikacja zapisuje dane bezpośrednio na urządzeniu użytkownika, co oznacza, że lista zadań pozostaje dostępna nawet po odświeżeniu strony, dzięki wykorzystaniu localStorage.",
+        language : ["localStorage", "CRUD", "Design", "TypeScript"],
+        link: "https://tasktrack-typescript.netlify.app/"
     },
 ]
 
