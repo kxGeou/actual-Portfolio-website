@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Language from "./language";
+import Language from "./Language";
 import { useState } from "react";
-import Title from "./title";
+import Title from "./Title";
 type TExperienceBox = {
   year: string;
   job: string;

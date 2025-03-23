@@ -1,5 +1,5 @@
 import ExperienceBox from "./ui/experience-box";
-import Title from "./ui/title";
+import Title from "./ui/Title";
 import { useState } from "react";
 const experienceList = [
   {
