@@ -1,5 +1,5 @@
 import ExperienceBox from "./ui/experience-box";
-import Title from "./ui/Title";
+import Title from "./ui/title";
 import { useState } from "react";
 const experienceList = [
   {
@@ -37,6 +37,33 @@ const experienceList = [
       "FontAwesome",
     ],
   },
+  {
+    description:
+      "Podczas praktyk jako Technik Programista w firmie Informatics Jaworzno, wspierałem zespół IT w konfiguracji i instalacji urządzeń, takich jak komputery, routery oraz drukarki. Moje obowiązki obejmowały również rozwiązywanie problemów technicznych.",
+    year: "maj 2022 - 2022",
+    job: "Praktykant IT / Technik Programista",
+    link: "https://informatics.jaworzno.pl/informatics/",
+    languages: [
+      "Konfiguracja Urządzeń",
+      "Instalacja Urządzeń",
+    ],
+  },
+  {
+    description:
+      "Podczas praktyk jako Technik Programista wspierałem zespół IT w konfiguracji i instalacji urządzeń, takich jak komputery, routery oraz drukarki. Moje obowiązki obejmowały pomoc w administracji siecią i konfiguracji oprogramowania. ",
+    year: "paźdz. 2022 - 2022",
+    job: "Praktyki IT w Urzędzie Miasta Jaworzno",
+    link: "https://bip.jaworzno.pl/",
+    languages: [
+      "Konfiguracja Urządzeń",
+      "Wymiana komponentów",
+      "React",
+      "Tailwind",
+      "PHP",
+      "DataBase",
+    ],
+  },
+
 ];
 export default function Experience() {
   const [hover, isHover] = useState(false);
@@ -68,7 +95,10 @@ export default function Experience() {
         onMouseEnter={() => isHover(!hover)}
         onMouseLeave={() => isHover(!hover)}
       >
-        <Title name={"Zobacze całe CV"} isHover={hover}></Title>
+       <a href="/GrzegorzMatusik.pdf" target="_blank">
+          <Title name={"Zobacze całe CV"} isHover={hover}></Title>
+        </a> 
+        
       </span>
     </section>
   );
