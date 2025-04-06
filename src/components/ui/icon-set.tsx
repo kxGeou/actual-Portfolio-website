@@ -21,12 +21,12 @@ export default function IconSet() {
     },
     {
       icon: "fa-brands fa-linkedin",
-      link: "https://www.linkedin.com/in/grzegorz-matusik-1016a3302",
+      link: "https://www.linkedin.com/in/grzegorz-matusik-401b0435a/?trk=opento_sprofile_details",
       title: "My Linkedin account"
     },
     {
       icon: "fa-regular fa-envelope",
-      link: "https://mail.google.com/mail/?view=cm&to=grzegorz.wfb@gmail.com",
+      link: "https://mail.google.com/mail/?view=cm&to=grzegorz.matusik.dev@gmail.com",
       title: "My Gmail account"
     }
   ]
