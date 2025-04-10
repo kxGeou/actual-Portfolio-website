@@ -16,7 +16,7 @@ export default function IconSet() {
     },
     {
       icon: "fa-brands fa-instagram",
-      link: "https://www.instagram.com/kxgeou/",
+      link: "https://www.instagram.com/devscribe/",
       title: "My Instagram account"
     },
     {
