@@ -10,7 +10,7 @@ const projectList = [
     {
         language : ["Firebase", "Database", "Design"],
         image : Scriptly,
-        alternative : "Scriptly hero section",
+        alternative : "Scriptly hero website",
         project : "Platforma Edukacyjna",
         description : "Scriptly to interaktywna platforma edukacyjno-dokumentacyjna, której celem jest nauka podstaw JavaScript oraz umiejętność czytania dokumentacji technicznej. Projekt pomaga początkującym programistom w zrozumieniu kluczowych koncepcji języka oraz nawigowaniu po dokumentacji w efektywny sposób.",
         link: "https://scriptly-a2c84.web.app/"
