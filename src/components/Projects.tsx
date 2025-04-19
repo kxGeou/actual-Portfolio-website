@@ -4,9 +4,18 @@ import Theme from '../assets/images/theme.png'
 import Red from '../assets/images/red.png'
 import Todo from '../assets/images/todo.png'
 import Wordle from '../assets/images/wordle.png';
+import WhatAbout from '../assets/images/whatAbout.png';
 import { Link } from "react-router-dom";
 import { useState } from "react";
 const projectList = [
+    {
+        image : WhatAbout,
+        alternative : "What about website",
+        project : "Co powiesz na..?",
+        description : "'Co powiesz na' to interaktywna strona która pomaga znaleźć ludziom pomysły na różne aktywności w zależności od wybranych przez użytkowników filtrów",
+        language : ["React", "Filter", "Figma", "Tailwind", "CSS"],
+        link: "https://copowieszna.netlify.app/"
+    },
     {
         language : ["Firebase", "Database", "Design"],
         image : Scriptly,
@@ -43,9 +52,10 @@ const projectList = [
         alternative : "Todo List website",
         project : "CRUD Todo lista",
         description : "Stworzyłem prostą aplikację typu Todo List z funkcjami CRUD (Create, Read, Update, Delete), która pozwala użytkownikowi na zarządzanie listą zadań. Aplikacja zapisuje dane bezpośrednio na urządzeniu użytkownika, co oznacza, że lista zadań pozostaje dostępna nawet po odświeżeniu strony, dzięki wykorzystaniu localStorage.",
-        language : ["localStorage", "CRUD", "Design", "TypeScript"],
+        language : ["localStorage", "CRUD", "Design", "TypeScript", "React"],
         link: "https://tasktrack-typescript.netlify.app/"
     },
+  
 ]
 
 
