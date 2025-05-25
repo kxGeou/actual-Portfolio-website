@@ -13,16 +13,8 @@ const projectList = [
         alternative : "What about website",
         project : "Co powiesz na..?",
         description : "'Co powiesz na' to interaktywna strona która pomaga znaleźć ludziom pomysły na różne aktywności w zależności od wybranych przez użytkowników filtrów",
-        language : ["React", "Filter", "Figma", "Tailwind", "CSS"],
+        language : ["React", "Filter", "Figma", "Tailwind", "CSS", "Desktop Only"],
         link: "https://copowieszna.netlify.app/"
-    },
-    {
-        language : ["Firebase", "Database", "Design"],
-        image : Scriptly,
-        alternative : "Scriptly hero website",
-        project : "Platforma Edukacyjna",
-        description : "Scriptly to interaktywna platforma edukacyjno-dokumentacyjna, której celem jest nauka podstaw JavaScript oraz umiejętność czytania dokumentacji technicznej. Projekt pomaga początkującym programistom w zrozumieniu kluczowych koncepcji języka oraz nawigowaniu po dokumentacji w efektywny sposób.",
-        link: "https://scriptly-a2c84.web.app/"
     },
     {
         image : Theme,
@@ -44,7 +36,7 @@ const projectList = [
         alternative : "Wordle Copy Game",
         project : "Wordle wersja uproszczona",
         description : "Stworzyłem kopie popularnej gry słownej WORDLE, Lekko zmieniłem design planszy by była bardziej przyjazna dla oka",
-        language : [ "React", "Design", "JSON", "TypeScript", "Regex"],
+        language : [ "React", "Design", "JSON", "TypeScript", "Regex", "Desktop Only"],
         link: "https://wordleclonetype.netlify.app/"
     },
     {
@@ -55,7 +47,15 @@ const projectList = [
         language : ["localStorage", "CRUD", "Design", "TypeScript", "React"],
         link: "https://tasktrack-typescript.netlify.app/"
     },
-  
+    {
+        language : ["Firebase", "Database", "Design"],
+        image : Scriptly,
+        alternative : "Scriptly hero website",
+        project : "Platforma Edukacyjna",
+        description : "Scriptly to interaktywna platforma edukacyjno-dokumentacyjna, której celem jest nauka podstaw JavaScript oraz umiejętność czytania dokumentacji technicznej. Projekt pomaga początkującym programistom w zrozumieniu kluczowych koncepcji języka oraz nawigowaniu po dokumentacji w efektywny sposób.",
+        link: "https://scriptly-a2c84.web.app/"
+    },
+    
 ]
 
 
