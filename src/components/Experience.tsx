@@ -96,7 +96,7 @@ export default function Experience() {
         onMouseLeave={() => isHover(!hover)}
       >
        <a href="/GrzegorzMatusik.pdf" target="_blank">
-          <Title name={"Zobacze całe CV"} isHover={hover}></Title>
+          <Title name={"Zobacz całe CV"} isHover={hover}></Title>
         </a> 
         
       </span>

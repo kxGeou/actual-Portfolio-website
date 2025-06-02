@@ -74,8 +74,8 @@ export default function Projects() {
             ))}
         </div>
         <p className="font-semibold text-[1.20rem] mt-12 flex justify-start items-center gap-3 cursor-pointer" onMouseLeave={() => setHover(!hover)} onMouseEnter={() => setHover(!hover)}>
-            <Link to="" className={`transition-all duration-300 flex justify-center items-center gap-1 cursor-not-allowed hover:opacity-75`}>Zobacz wszystkie projekty
-               <i className={`fa-solid fa-arrow-right text-[1rem] ml-2 transition-all duration-200 ${hover && "translate-x-2 text-text-box"}`}></i>
+            <Link to="" className={`transition-all duration-300 flex justify-center items-center gap-1 cursor-not-allowed opacity-50`}>Zobacz wszystkie projekty
+               <i className={`fa-solid fa-arrow-right text-[1rem] ml-2 transition-all duration-200 `}></i>
             </Link>
         </p>
     </section>
