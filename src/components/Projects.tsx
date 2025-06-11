@@ -2,7 +2,7 @@ import Project from "./ui/project-element";
 import Scriptly from '../assets/images/scriptly.png'
 import Theme from '../assets/images/theme.png'
 import Red from '../assets/images/red.png'
-import Todo from '../assets/images/todo.png'
+import Todo from '../assets/images/newTodo.png'
 import Wordle from '../assets/images/wordle.png';
 import WhatAbout from '../assets/images/whatAbout.png';
 import { Link } from "react-router-dom";
@@ -41,11 +41,11 @@ const projectList = [
     },
     {
         image : Todo,
-        alternative : "Todo List website",
-        project : "CRUD Todo lista",
-        description : "Stworzyłem prostą aplikację typu Todo List z funkcjami CRUD (Create, Read, Update, Delete), która pozwala użytkownikowi na zarządzanie listą zadań. Aplikacja zapisuje dane bezpośrednio na urządzeniu użytkownika, co oznacza, że lista zadań pozostaje dostępna nawet po odświeżeniu strony, dzięki wykorzystaniu localStorage.",
-        language : ["localStorage", "CRUD", "Design", "TypeScript", "React"],
-        link: "https://tasktrack-typescript.netlify.app/"
+        alternative : "AI Todo List website",
+        project : "To-Do lista zasilana AI oraz bazą danych supabase",
+        description : "Stworzyłem aplikacje To-Do w której użytkownik tworzy swoje konto na którym baza danych supabase przechowuje jego To-Do, aplikacja zasilana jest przez AI dzięki któremu kategorie To-do są automatycznie ustawione zależnie od tytułu zadania, użytkownik także ma generowane oryginalne profilowe",
+        language : ["Supabase", "CRUD", "AI", "TypeScript", "React", "Auth"],
+        link: "https://aitaskamanager.netlify.app/"
     },
     {
         language : ["Firebase", "Database", "Design"],
