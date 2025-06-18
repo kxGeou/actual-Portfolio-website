@@ -8,6 +8,22 @@ import WhatAbout from '../assets/images/whatAbout.png';
 import { Link } from "react-router-dom";
 import { useState } from "react";
 const projectList = [
+     {
+        image : Todo,
+        alternative : "AI Todo List website",
+        project : "To-Do lista zasilana AI oraz bazą danych supabase",
+        description : "Stworzyłem aplikacje To-Do w której użytkownik tworzy swoje konto na którym baza danych supabase przechowuje jego To-Do, aplikacja zasilana jest przez AI dzięki któremu kategorie To-do są automatycznie ustawione zależnie od tytułu zadania, użytkownik także ma generowane oryginalne profilowe",
+        language : ["Supabase", "CRUD", "AI", "TypeScript", "React", "Auth"],
+        link: "https://aitaskamanager.netlify.app/"
+    },
+     {
+        image : Wordle,
+        alternative : "Wordle Copy Game",
+        project : "Wordle wersja uproszczona",
+        description : "Stworzyłem kopie popularnej gry słownej WORDLE, Lekko zmieniłem design planszy by była bardziej przyjazna dla oka",
+        language : [ "React", "Design", "JSON", "TypeScript", "Regex", "Desktop Only"],
+        link: "https://wordleclonetype.netlify.app/"
+    },
     {
         image : WhatAbout,
         alternative : "What about website",
@@ -31,22 +47,8 @@ const projectList = [
         language : [ "React", "Design"],
         link: "https://r3dmotion.com/"
     },
-    {
-        image : Wordle,
-        alternative : "Wordle Copy Game",
-        project : "Wordle wersja uproszczona",
-        description : "Stworzyłem kopie popularnej gry słownej WORDLE, Lekko zmieniłem design planszy by była bardziej przyjazna dla oka",
-        language : [ "React", "Design", "JSON", "TypeScript", "Regex", "Desktop Only"],
-        link: "https://wordleclonetype.netlify.app/"
-    },
-    {
-        image : Todo,
-        alternative : "AI Todo List website",
-        project : "To-Do lista zasilana AI oraz bazą danych supabase",
-        description : "Stworzyłem aplikacje To-Do w której użytkownik tworzy swoje konto na którym baza danych supabase przechowuje jego To-Do, aplikacja zasilana jest przez AI dzięki któremu kategorie To-do są automatycznie ustawione zależnie od tytułu zadania, użytkownik także ma generowane oryginalne profilowe",
-        language : ["Supabase", "CRUD", "AI", "TypeScript", "React", "Auth"],
-        link: "https://aitaskamanager.netlify.app/"
-    },
+   
+   
     {
         language : ["Firebase", "Database", "Design"],
         image : Scriptly,
